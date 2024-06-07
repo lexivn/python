@@ -1,6 +1,7 @@
 # Table of Contents
 
 1. [Exercise](#exercise-1)
+2. [Exercise](#exercise-2)
 
 # Exercise 1
 
@@ -49,8 +50,6 @@ Set up an IPython shell in the virtual environment "cf-python-base". An IPython 
 Generate a “requirements.txt” file from your source environment. Next, create a new environment called “cf-python-copy”. In this new environment, install packages from the “requirements.txt” file.
 
 ![Step 5](./Achievement%201/Exercise%201.1/Step5.png)
-
-2. [Exercise](#exercise-2)
 
 # Exercise 2
 
