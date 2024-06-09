@@ -2,6 +2,7 @@
 
 1. [Exercise](#exercise-1)
 2. [Exercise](#exercise-2)
+3. [Exercise](#exercise-3)
 
 # Exercise 1
 
