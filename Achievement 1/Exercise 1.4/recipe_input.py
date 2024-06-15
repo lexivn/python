@@ -94,7 +94,7 @@ data = {
   'all_ingredients': all_ingredients
   }
 
-# Save rhe dictionary to a user-specified file
+# Save the dictionary to a user-specified file
 file = input('Enter te filename where you would like to store your recipes: ')
 with open('file', 'wb') as my_file:
   pickle.dump(data, my_file)

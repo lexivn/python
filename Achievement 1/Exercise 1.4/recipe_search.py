@@ -42,7 +42,7 @@ try:
   data = pickle.load(my_file)
 
 except FileNotFoundError:
-  print('The file hasn\'nt been founf')
+  print('The file hasn\'nt been found')
 
 else:
   search_ingredient(data)
