@@ -7,6 +7,7 @@
 5. [Exercise 4 Part 2](#exercise-4-part-2)
 6. [Exercise 4 Part 3](#exercise-4-part-3)
 7. [Exercise 5](#exercise-5)
+8. [Exercise 6](#exercise-6)
 
 # Exercise 1
 
