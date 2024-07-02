@@ -7,7 +7,18 @@
 5. [Exercise 4 Part 2](#exercise-4-part-2)
 6. [Exercise 4 Part 3](#exercise-4-part-3)
 7. [Exercise 5](#exercise-5)
-8. [Exercise 6](#exercise-6)
+8. [Exercise 6 Part 1](#exercise-6-part-1)
+9. [Exercise 6 Part 2](#exercise-6-part-2)
+10. [Exercise 6 Part 3](#exercise-6-part-3)
+11. [Exercise 6 Part 4](#exercise-6-part-4)
+12. [Exercise 6 Part 5](#exercise-6-part-5)
+13. [Exercise 6 part 6](#exercise-6-part-6)
+14. [Exercise 6 Part 7](#exercise-6-part-7)
+15. [Exercise 7 Part 1](#exercise-7-part-1)
+16. [Exercise 7 Part 2](#exercise-7-part-2)
+17. [Exercise 7 Part 3](#exercise-7-part-3)
+18. [Exercise 7 Part 4](#exercise-7-part-4)
+19. [Exercise 7 Part 5](#exercise-7-part-5)
 
 # Exercise 1
 
@@ -608,6 +619,236 @@ Execute Query and Commit Changes
 4. [Update a Recipe](#update-a-recipe)
 5. [Delete a Recipe](#delete-a-recipe)
 6. [Exit](#exit)
+
+## Run Script
+
+Ensure that your MySQL server is running on your system. Then, run your script.
+
+![step 1](./Achievement%201/Exercise%201.6/P7Step1.png)
+
+## Add Recipes
+
+Create about 3 to 4 simple recipes of your choice using the first option in your menu.
+
+![step 2](./Achievement%201/Exercise%201.6/P7Step2.png)
+
+## Run a Search
+
+Run a search by selecting the ingredient to search for, this time using the second option in the script: **Search for a Recipe**.
+
+![step 3](./Achievement%201/Exercise%201.6/P7Step3.png)
+
+## Update a Recipe
+
+Change a few values in some of your recipes using the third option in your script’s menu: Update a Recipe.
+
+![step 4](./Achievement%201/Exercise%201.6/P7Step4.png)
+
+## Delete a Recipe
+
+Delete a Recipe
+
+![step 5](./Achievement%201/Exercise%201.6/P7Step5.png)
+
+## Exit
+
+Exit the Script
+![step 6](./Achievement%201/Exercise%201.6/P7Step6.png)
+
+# Exercise 7 Part 1
+
+## Table of Contents
+
+1. [Create Recipe App](#create-recipe-app)
+2. [Imports](#imports)
+3. [Create Engine](#create-engine)
+4. [Create the Session Object](#create-the-session-object)
+
+## Create Recipe App
+
+Open a script file called **recipe_app.py**.
+
+![step 1](./Achievement%201/Exercise%201.7/P1Step1.jpg)
+
+## Imports
+
+Import all the packages and methods necessary to build your application.
+
+![step 2](./Achievement%201/Exercise%201.7/P1Step2.jpg)
+
+## Create Engine
+
+Create an engine object called engine that connects to your desired database.
+
+![step 3](./Achievement%201/Exercise%201.7/P1Step4.jpg)
+
+## Create the Session Object
+
+Create the session object. Generate the **Session** class, **bind** it to the **engine**, and initialize the session object.
+
+![step 4](./Achievement%201/Exercise%201.7/P1Step5.jpg)
+
+# Exercise 7 Part 2
+
+## Table of Contents
+
+1. [Recipe Class](#recipe-class)
+2. [Set the Table Name](#set-the-table-name)
+3. [Create Table Columns](#create-table-columns)
+4. [REPR Method](#repr-method)
+5. [STR Method](#str-method)
+6. [Calculate Recipe Difficulty](#calculate-recipe-difficulty)
+7. [Retrieve Ingredients](#retrieve-intredients)
+8. [Create the Table](#create-the-table)
+
+## Recipe Class
+
+The **Recipe** class should inherit the **Base** class
+
+![step 1](./Achievement%201/Exercise%201.7/P2Step1.jpg)
+
+## Set the Table Name
+
+Define an attribute to set the table’s name as **final_recipes**.
+
+![step 2](./Achievement%201/Exercise%201.7/P2Step2.jpg)
+
+## Create Table Columns
+
+Define these attributes to create columns in your table:
+
+- id: integer; primary key; increments itself automatically.
+- name: string with 50-character limit; stores the recipe’s name.
+  ingredients: string type; character limit of 255; stores the ingredients of the recipe in the form of a string.
+- cooking_time: integer; stores the recipe’s cooking time in minutes
+- difficulty: string with 20-character limit; stores one of four strings that describe the difficulty of the recipe (Easy, Medium, Intermediate, and Hard).
+
+![step 3](./Achievement%201/Exercise%201.7/P2Step3.jpg)
+
+## REPR Method
+
+Define a **repr** method that shows a quick representation of the recipe, including the id, name, and difficulty.
+
+![step 4](./Achievement%201/Exercise%201.7/P2Step4.jpg)
+
+## STR Method
+
+Define a **str** method that prints a well-formatted version of the recipe.
+
+![step 5](./Achievement%201/Exercise%201.7/P2Step5.jpg)
+
+## Calculate Recipe Difficulty
+
+Define a method called `calculate_difficulty()` to calculate the difficulty of a recipe based on the number of ingredients and cooking time.
+
+![step 6](./Achievement%201/Exercise%201.7/P2Step6.jpg)
+
+## Retrieve Ingredients
+
+Define a method that retrieves the ingredients string inside your Recipe object as a list, called `return_ingredients_as_list()`.
+
+![step 7](./Achievement%201/Exercise%201.7/P2Step7.jpg)
+
+## Create the Table
+
+Create the table on the database using the `create_all()` method from `Base.metadata`.
+
+![step 8](./Achievement%201/Exercise%201.7/P2Step8.jpg)
+
+# Exercise 7 Part 3
+
+## Table of Contents
+
+1. [Create Recipe Function](#create-recipe-function)
+2. [View All Recipes Function](#view-all-recipes-function)
+3. [Search By Ingredient Function](#search-by-ingredient-function)
+4. [Edit Recipe Function](#edit-recipe-function)
+5. [Delete Recipe Function](#delete-recipe-function)
+
+## Create Recipe Function
+
+Function 1: create_recipe()
+
+![step 1](./Achievement%201/Exercise%201.7/P3Step1.jpg)
+
+## View All Recipes Function
+
+Function 2: view_all_recipes()
+
+![step 2](./Achievement%201/Exercise%201.7/P3Step2.jpg)
+
+## Search By Ingredient Function
+
+Function 3: search_by_ingredients()
+
+![step 3](./Achievement%201/Exercise%201.7/P3Step3.jpg)
+
+## Edit Recipe Function
+
+Function 4: edit_recipe()
+
+![step 4](./Achievement%201/Exercise%201.7/P3Step4.jpg)
+
+## Delete Recipe Function
+
+Function 5: delete_recipe()
+
+![step 5](./Achievement%201/Exercise%201.7/P3Step5.jpg)
+
+# Exercise 7 Part 4
+
+## Create Main Menu
+
+Design the Main Menu. The main menu will be contained in a while loop, where the condition to exit the loop will be based on the user’s choice.
+
+![step 1](./Achievement%201/Exercise%201.7/P4Step1.jpg)
+
+# Exercise 7 Part 5
+
+## Table of Contents
+
+1. [Create Recipes Using App](#create-recipes-using-app)
+2. [View All Recipes](#view-all-recipes)
+3. [Search By Ingredients](#search-by-ingredients)
+4. [Edit a Recipe](#edit-a-recipe)
+5. [Delete a Recipe](#delete-a-recipe)
+6. [Exit the Application](#exit-the-application)
+
+## Create Recipes Using App
+
+Create a few recipes of your own through your application.
+
+![step 1](./Achievement%201/Exercise%201.7/P5Step1.jpg)
+
+## View All Recipes
+
+View all recipes using the app.
+
+![step 2](./Achievement%201/Exercise%201.7/P5Step2.jpg)
+
+## Search By Ingredients
+
+Search for recipes by ingredients using the app.
+
+![step 3](./Achievement%201/Exercise%201.7/P5Step3.jpg)
+
+## Edit a Recipe
+
+Edit a recipe using the app.
+
+![step 4](./Achievement%201/Exercise%201.7/P5Step4.jpg)
+
+## Delete a Recipe
+
+Delete a recipe using the app
+
+![step 5](./Achievement%201/Exercise%201.7/P5Step5.jpg)
+
+## Exit the Application
+
+Exit the application through the main menu
+
+![step 6](./Achievement%201/Exercise%201.7/P5Step6.jpg)
 
 ## Run Script
 
